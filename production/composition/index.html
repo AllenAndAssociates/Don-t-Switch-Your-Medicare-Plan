@@ -1,0 +1,507 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Medicare 2027 — Graphic Stage</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="stage">
+
+  <!-- Speaker backdrop: only rendered in ?layer=bg (2640px wide, panned by the compositor) -->
+  <div id="backdrop"></div>
+
+  <div id="fg">
+
+    <!-- =================== RIGHT CANVAS (50/50 split) =================== -->
+    <div id="canvasR">
+
+      <!-- Shot 1 · Title -->
+      <section class="rscene" id="r-title">
+        <div class="label-blue">MEDICARE 2027</div>
+        <h1 class="h-xl kin">
+          <span class="line"><span class="w">Don't</span> <span class="w">Switch</span></span>
+          <span class="line"><span class="w">Until</span> <span class="w">You</span></span>
+          <span class="line"><span class="w hl">Watch</span> <span class="w hl">This.</span></span>
+        </h1>
+        <div class="title-rule"></div>
+        <div class="title-meta"><span>Shop <b>Medigap</b></span><i class="dot"></i><span><b>Advantage</b></span><i class="dot"></i><span><b>Part D</b></span></div>
+      </section>
+
+      <!-- Shots 2–3 · Cost of switching -->
+      <section class="rscene" id="r-cost">
+        <div class="kicker">The real cost of switching</div>
+        <div class="metric" id="cost-g">
+          <div class="metric-top"><div class="m-pill">&minus;$40<small>/mo</small></div><div class="m-label">premium<br>savings</div></div>
+          <div class="m-track"><div class="m-fill g"></div></div>
+          <div class="m-scale"><span>≈ $480 a year saved</span><span></span></div>
+        </div>
+        <div class="vs" id="cost-vs">VS.</div>
+        <div class="metric" id="cost-r">
+          <div class="metric-top"><div class="m-block"><i data-i="alert"></i>+$4,000+</div><div class="m-label">unexpected<br>out-of-pocket exposure</div></div>
+          <div class="m-track"><div class="m-fill r"></div></div>
+        </div>
+        <div class="lock-card" id="cost-lock">
+          <div class="lk"><i data-i="lock"></i></div>
+          <div><div class="t1">Original Coverage Locked Out</div><div class="t2">(Medical Underwriting Required)</div></div>
+        </div>
+      </section>
+
+      <!-- Shot 4 · Brand authority -->
+      <section class="rscene" id="r-brand">
+        <div class="brand-card">
+          <div class="logo-row">
+            <div class="logo"><div class="monogram"><b>A<i>&amp;</i>A</b></div></div>
+            <div class="brand-agency">ALLEN &amp; ASSOCIATES<small>MAKING MEDICARE EASY</small></div>
+          </div>
+          <div class="brand-name">ARRIC ALLEN</div>
+          <div class="brand-chip"><i data-i="shieldCheck"></i>Licensed Specialist Since 1994</div>
+          <div class="brand-rule"></div>
+          <div class="brand-tag">Helping You Navigate Medicare<br>Without Confusion</div>
+        </div>
+      </section>
+
+      <!-- Shots 7–8 · Roadmap -->
+      <section class="rscene" id="r-roadmap">
+        <div class="kicker">2027 Shopping Roadmap</div>
+        <div class="road-list">
+          <div class="road-rail"></div>
+          <div class="road-item" id="ri1"><div class="num">1</div><div class="txt"><b>Medicare Supplement</b><span>(Medigap)</span></div></div>
+          <div class="road-item" id="ri2"><div class="num">2</div><div class="txt"><b>Medicare Advantage</b><span>(Part C)</span></div></div>
+          <div class="road-item" id="ri3"><div class="num">3</div><div class="txt"><b>Prescription Drug Plans</b><span>(Part D)</span></div></div>
+          <div class="road-item bonus" id="ri4"><div class="num">4</div><div class="txt"><span class="tag">BONUS</span><b>The “Rate Increase Hack” Strategy</b></div></div>
+        </div>
+      </section>
+
+      <!-- Shots 10–12 · Myth vs fact -->
+      <section class="rscene" id="r-myth">
+        <div class="kicker">Headlines vs. Reality</div>
+        <div class="mf myth" id="mf-myth">
+          <div class="mf-icon"><i data-i="x" data-sw="3"></i></div>
+          <div><div class="mf-tag">MYTH</div><div class="mf-text">“I can freely switch Medigap plans during Fall AEP without health questions.”</div></div>
+          <div class="strike"></div>
+        </div>
+        <div class="mf fact" id="mf-fact">
+          <div class="mf-icon"><i data-i="check" data-sw="3"></i></div>
+          <div><div class="mf-tag">FACT</div><div class="mf-text"><b>Oct 15 – Dec 7 (AEP)</b> ONLY applies to Advantage (Part C) &amp; Drug Plans (Part D).</div></div>
+        </div>
+        <div class="strip" id="mf-strip"><i data-i="alert"></i><span>Medigap <span class="eq">=</span> Zero Special AEP Guarantee Rights</span></div>
+      </section>
+
+      <!-- Shots 16–17 · State rules tile map -->
+      <section class="rscene" id="r-map" style="display:block;padding:0">
+        <div class="map-head">
+          <div class="kicker">Birthday &amp; Anniversary Rules</div>
+          <div class="h-lg" style="margin-top:20px">Special State Guaranteed Issue Rules</div>
+        </div>
+        <div class="mapbox" id="mapbox"></div>
+        <div class="map-legend" id="map-legend"><span><i style="background:var(--green)"></i>Special state protections</span><span><i style="background:#E3E8EE"></i>Standard federal rules</span></div>
+        <div class="fp-wrap">
+          <div class="fp" id="fp1"><i data-i="scale"></i><div><small>Fine print</small><b>Equal or Lesser Benefit Only</b></div></div>
+          <div class="fp" id="fp2"><i data-i="repeat"></i><div><small>Fine print</small><b>IL, KY, WV: Same Insurance Carrier Only</b></div></div>
+        </div>
+      </section>
+
+      <!-- Shot 18 · Cause and effect -->
+      <section class="rscene" id="r-irony">
+        <div class="kicker">The Birthday Rule Irony</div>
+        <div class="ce">
+          <div class="ce-node" id="ce1"><div class="ic-b"><i data-i="users"></i></div><b>More Guaranteed Issue Applicants</b></div>
+          <div class="ce-arrow" id="cea1"><i data-i="arrowDown" data-sw="2.6"></i></div>
+          <div class="ce-node" id="ce2"><div class="ic-b"><i data-i="activity"></i></div><b>Higher Claims Pool</b></div>
+          <div class="ce-arrow" id="cea2"><i data-i="arrowDown" data-sw="2.6"></i></div>
+          <div class="ce-node red" id="ce3"><div class="ic-b"><i data-i="trendUp"></i></div><b>Steeper Annual Rate Hikes</b></div>
+        </div>
+      </section>
+
+      <!-- Shots 19–20 · Rate chart -->
+      <section class="rscene" id="r-chart" style="gap:22px">
+        <div class="kicker">Medigap Annual Rate Increases</div>
+        <svg class="chart" id="chart" viewBox="0 0 784 430">
+          <g id="ch-grid"></g>
+          <rect id="ch-band-past" x="70" y="0" width="420" height="0" fill="rgba(31,111,235,0.12)"/>
+          <rect id="ch-band-now" x="560" y="0" width="200" height="0" fill="rgba(217,45,32,0.10)"/>
+          <path id="ch-past" d="" fill="none" stroke="#1F6FEB" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+          <path id="ch-now" d="" fill="none" stroke="#D92D20" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle id="ch-dot" r="11" fill="#D92D20" stroke="#fff" stroke-width="4"/>
+          <text x="70" y="424">Years ago</text>
+          <text x="760" y="424" text-anchor="end">Today</text>
+          <text id="ch-illus" x="760" y="22" text-anchor="end" style="font-size:15px;letter-spacing:0.12em">ILLUSTRATIVE RANGES</text>
+        </svg>
+        <div class="chips">
+          <div class="chip blue" id="chip-past"><i data-i="trendUp"></i>Past: 5%–8% Avg Annual Increase (&lt;$250/mo)</div>
+          <div class="chip red" id="chip-now"><i data-i="alert"></i>Today: 10%–18%+ Annual Spikes</div>
+          <div class="chip-row" id="chip-to"><span class="arr"><i data-i="arrowRight" data-sw="2.8"></i></span><div class="chip green">Plan N &amp; High-Deductible Plan G</div></div>
+        </div>
+      </section>
+
+      <!-- Shot 25 · 80/20 stacked bar -->
+      <section class="rscene" id="r-bar">
+        <div class="kicker">High-Deductible Plan G</div>
+        <div class="h-lg">You never pay full price toward the deductible</div>
+        <div class="bill-lbl"><i data-i="receipt"></i>Every Medicare-approved bill</div>
+        <div class="sbar"><div class="seg blue" id="sb-b"><b>80%</b><span>Paid by Original Medicare Immediately</span></div><div class="seg grn" id="sb-g"><b>20%</b><span>Your share</span></div></div>
+        <div class="legend2" id="sb-leg">
+          <div class="li"><i class="sw" style="background:var(--green)"></i><span>You Only Pay the <b class="hl-green">20% Share</b> Toward the <b>$3,050 Cap</b></span></div>
+        </div>
+        <div class="meter" id="sb-meter"><div class="fill" id="sb-fill"></div><div class="cap">$3,050 CAP</div></div>
+      </section>
+
+      <!-- Shot 26 · Shield -->
+      <section class="rscene" id="r-shield">
+        <div class="kicker">Think of it this way</div>
+        <div class="shield-row">
+          <div class="shield" id="sh-icon">
+            <svg viewBox="0 0 24 26"><path d="M12 25s10-4.6 10-12.4V4.6L12 1 2 4.6v8C2 20.4 12 25 12 25z" fill="#0A2540"/><path d="M12 22.6s8-3.8 8-10.2V6L12 3 4 6v6.4c0 6.4 8 10.2 8 10.2z" fill="none" stroke="#00B140" stroke-width="1.2"/></svg>
+            <div class="amt">$3,050<small>MAX / YEAR</small></div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:22px">
+            <div class="h-md" id="sh-t1">Functions as a <span class="hl-green">$3,050</span> Out-of-Pocket Maximum</div>
+            <div class="covered" id="sh-cov"><i data-i="arrowRight" data-sw="2.8"></i>Then 100% Covered</div>
+          </div>
+        </div>
+        <div class="meter" id="sh-meter"><div class="fill" id="sh-fill"></div><div class="cap" id="sh-cap">$3,050</div></div>
+        <div class="meter-lbls"><span>$0</span><span id="sh-lbl">Deductible met → plan pays 100%</span></div>
+      </section>
+
+      <!-- Shots 27–28 · Profiles + caution -->
+      <section class="rscene" id="r-profiles">
+        <div class="kicker">Which plan fits you?</div>
+        <div class="prof-row">
+          <div class="prof hdg" id="pf1">
+            <div class="ph"><small>Good fit for</small>High-Deductible Plan G</div>
+            <ul><li><i data-i="checkCircle"></i>Healthy</li><li><i data-i="checkCircle"></i>Infrequent doctor visits</li><li><i data-i="checkCircle"></i>Emergency savings</li></ul>
+          </div>
+          <div class="prof pg" id="pf2">
+            <div class="ph"><small>Stay on</small>Standard Plan G</div>
+            <ul><li><i data-i="heart"></i>Chronic conditions</li><li><i data-i="stethoscope"></i>Frequent specialists</li></ul>
+          </div>
+        </div>
+        <div class="caution" id="pf-caution"><i data-i="alert"></i><div><b>One-Way Street in Most States</b><span>Returning to Plan G Requires Medical Underwriting</span></div></div>
+      </section>
+
+      <!-- Shot 29 · Anniversary calendar -->
+      <section class="rscene" id="r-calendar">
+        <div class="kicker">Your policy anniversary</div>
+        <div class="h-lg">Medigap rates don't reset January 1</div>
+        <div class="cal-row">
+          <div class="cal" id="cal1"><div class="top">JUNE</div><div class="day">1</div><div class="cap">Enrolled<br>June 1</div></div>
+          <div class="cal-mid" id="cal-mid"><div class="lk"><i data-i="lock"></i></div><div class="ln"></div><div class="tx">Rate locked<br>12 months</div></div>
+          <div class="cal" id="cal2"><div class="top g">JUNE</div><div class="day">1</div><div class="cap">Next year:<br>rate may adjust</div></div>
+        </div>
+        <div class="mstrip" id="mstrip"></div>
+        <div class="ann-note" id="ann-note"><i data-i="calendar"></i><span>Rates typically adjust on your <b>policy anniversary month</b></span></div>
+      </section>
+
+      <!-- Shots 30–31 · Carriers -->
+      <section class="rscene" id="r-carriers">
+        <div class="kicker">Standardized by law</div>
+        <div class="car-row">
+          <div class="car" id="car1"><div class="cn">Carrier A</div><div class="pl">Plan G</div><div class="pr">$$$</div><div class="verdict"><i data-i="xCircle"></i>Declined</div></div>
+          <div class="car-eq" id="eq1">=</div>
+          <div class="car" id="car2"><div class="cn">Carrier B</div><div class="pl">Plan G</div><div class="pr">$$</div><div class="verdict"><i data-i="checkCircle"></i>Approved</div></div>
+          <div class="car-eq" id="eq2">=</div>
+          <div class="car" id="car3"><div class="cn">Carrier C</div><div class="pl">Plan G</div><div class="pr">$</div></div>
+        </div>
+        <div class="ident" id="ident">100% Identical Coverage by Law <span class="g">— Only the Price Changes</span></div>
+        <div class="uw-note" id="uw-note"><i data-i="search"></i>But underwriting varies: different health-question lookback windows</div>
+      </section>
+
+      <!-- Shot 36 · 3M counter -->
+      <section class="rscene" id="r-counter">
+        <div class="kicker">Medicare Advantage 2027</div>
+        <div class="big-count tnum" id="cnt-big">3,000,000+</div>
+        <div class="h-md" style="font-size:40px">Enrollees Facing Plan Terminations for 2027</div>
+        <div class="units" id="units"></div>
+        <div class="units-note"><i data-i="user"></i>= 100,000 enrollees</div>
+      </section>
+
+      <!-- Shot 37 · Market shifts -->
+      <section class="rscene" id="r-shifts">
+        <div class="kicker">2027 Market Shifts</div>
+        <div class="h-lg">Carriers are pulling back</div>
+        <div class="rows">
+          <div class="row-card" id="sh1"><div class="ib"><i data-i="mapPin"></i></div><div><b>County Exits</b><span>Plans leaving unprofitable counties</span></div><div class="down"><i data-i="trendDown"></i></div></div>
+          <div class="row-card" id="sh2"><div class="ib"><i data-i="network"></i></div><div><b>Shrinking Doctor Networks</b><span>Fewer in-network providers</span></div><div class="down"><i data-i="trendDown"></i></div></div>
+          <div class="row-card" id="sh3"><div class="ib"><i data-i="gift"></i></div><div><b>Reduced Supplemental Benefits</b><span>Extras like dental can shrink</span></div><div class="down"><i data-i="trendDown"></i></div></div>
+        </div>
+      </section>
+
+      <!-- Shot 38 · Verify status -->
+      <section class="rscene" id="r-verify">
+        <div class="kicker">Verify your plan status</div>
+        <div class="h-lg">Two places to check</div>
+        <div class="verify-row">
+          <div class="vcard" id="vc1">
+            <div class="booklet"><div class="pg b2"></div><div class="cv"><b>ANOC</b><i class="g"></i><i></i><i></i><i style="width:70%"></i></div></div>
+            <div class="k">Check your mail</div><b>ANOC</b><span>Annual Notice of Change</span>
+          </div>
+          <div class="vcard" id="vc2">
+            <div class="browser"><div class="bar"><i></i><i></i><i></i><u>medicare.gov</u></div><div class="bd"><i></i><i style="width:80%"></i><i style="width:60%"></i><i style="width:70%"></i></div><div class="ok"><i data-i="check" data-sw="3"></i></div></div>
+            <div class="k">Log in</div><b>Medicare.gov</b><span>Portal Check</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Shot 43 · Fine print -->
+      <section class="rscene" id="r-fineprint">
+        <div class="kicker">Don't rely on summaries alone</div>
+        <div class="docs">
+          <div class="doc sum" id="doc1"><div class="dh"><small>ONLINE</small>Summary Highlights</div><div class="big"><i></i><i style="width:80%"></i><i style="width:60%"></i><i style="width:75%"></i></div><div class="tagx">THE HEADLINES</div></div>
+          <div class="vs-tag">VS.</div>
+          <div class="doc eoc" id="doc2"><div class="dh"><small>PLAN DOCUMENT</small>Evidence of Coverage (EOC)</div><div class="fine"><i></i><i></i><i style="width:90%"></i><i class="hl" style="width:70%"></i><i></i><i style="width:85%"></i><i></i><i class="hl" style="width:55%"></i><i style="width:92%"></i><i></i><i style="width:80%"></i><i class="hl" style="width:64%"></i><i></i><i style="width:76%"></i></div><div class="tagx">THE FINE PRINT</div></div>
+          <div class="mag" id="mag"><div class="handle"></div><div class="lens"><span>COPAYS<br>MOOP<br>NETWORK</span></div></div>
+        </div>
+        <div class="h-md" id="fp-line">The fine print is where <span class="hl-red">costly surprises</span> hide.</div>
+      </section>
+
+      <!-- Shots 44–45 · Leaving MA -->
+      <section class="rscene" id="r-leaving" style="gap:20px">
+        <div class="kicker">Leaving Advantage for Medigap</div>
+        <div class="rule-box" id="lv-rule"><i data-i="clipboard"></i><div><small>DEFAULT RULE</small><b>Must Pass Medical Underwriting</b></div></div>
+        <div class="ex-head" id="lv-head"><span>3 EXCEPTIONS</span>No Health Questions</div>
+        <div class="ex" id="lv1"><div class="n">1</div><b>Plan Terminated</b></div>
+        <div class="ex" id="lv2"><div class="n">2</div><b>Guaranteed Issue State</b></div>
+        <div class="ex" id="lv3"><div class="n">3</div><b>12-Month First-Time Trial Right</b></div>
+      </section>
+
+      <!-- Shot 47 · MA OEP -->
+      <section class="rscene" id="r-oep">
+        <div class="kicker">Medicare Advantage Open Enrollment</div>
+        <div class="year" id="year"></div>
+        <div class="year-lbls"><div class="yl" id="yl-oep" style="left:0;color:var(--green-d)">MA OEP<br><span style="color:var(--ink-2);font-weight:700">Jan 1 – Mar 31</span></div><div class="yl" id="yl-aep" style="left:582px;color:var(--blue)">AEP<br><span style="color:var(--ink-2);font-weight:700">Oct 15 – Dec 7</span></div></div>
+        <div class="oep-card" id="oep-card">
+          <div class="when">JAN 1 – MAR 31<small>(MA OEP)</small></div>
+          <div class="what"><b>1 Extra Chance</b> to Switch MA Plans or Return to Original Medicare</div>
+        </div>
+      </section>
+
+      <!-- Shot 48 · Part D landscape -->
+      <section class="rscene" id="r-partd">
+        <div class="kicker">2027 Part D Landscape</div>
+        <div class="h-lg">Standalone drug plans</div>
+        <div class="rows">
+          <div class="row-card" id="pd1"><div class="ib"><i data-i="trendUp"></i></div><div><b>Premiums rising across the board</b><span>Most standalone Part D plans cost more</span></div></div>
+          <div class="row-card amber" id="pd2"><div class="ib"><i data-i="calendar"></i></div><div><b>Federal subsidies ending</b><span>Temporary premium support sunsets Dec 31, 2026</span></div></div>
+          <div class="row-card green" id="pd3"><div class="ib"><i data-i="dollar"></i></div><div><b>Budget options still exist (~$5/mo)</b><span>Like Wellcare Value Script in 44+ states</span></div></div>
+        </div>
+      </section>
+
+      <!-- Shot 49 · True annual cost -->
+      <section class="rscene" id="r-equation" style="gap:22px">
+        <div class="kicker">Compare total cost, not premium</div>
+        <div class="eqn">
+          <div class="term" id="eq-a"><div class="ib"><i data-i="calendar"></i></div><b>Monthly Premium<small>× 12</small></b></div>
+          <div class="op" id="op1">+</div>
+          <div class="term" id="eq-b"><div class="ib"><i data-i="pillRx"></i></div><b>Annual Drug Copays</b></div>
+          <div class="op" id="op2">+</div>
+          <div class="term" id="eq-c"><div class="ib"><i data-i="store"></i></div><b>Preferred Pharmacy</b></div>
+          <div class="op eq" id="op3">=</div>
+          <div class="term result" id="eq-d"><div class="ib"><i data-i="dollar"></i></div><b>True Annual Cost</b></div>
+        </div>
+      </section>
+
+      <!-- Shot 54 · CTA -->
+      <section class="rscene" id="r-cta">
+        <div class="cta-card" id="cta-card">
+          <div class="free">FREE</div>
+          <div class="ttl">2027 Interactive<br><em>AEP Guide</em></div>
+        </div>
+        <div class="bubble" id="cta-bubble"><i data-i="chat"></i><b>Comment <em>“GUIDE”</em> Below</b></div>
+      </section>
+
+    </div>
+    <div id="divider"></div>
+
+    <!-- =================== DATA STAGE (full-screen dark grid) =================== -->
+    <div id="dataStage">
+
+      <!-- Shots 5–6 · Landscape -->
+      <section class="dscene" id="d-landscape">
+        <div class="dkicker">2027 Medicare Landscape</div>
+        <div class="dtitle">A massive year for <span class="q">Medicare changes</span></div>
+        <div class="stat-grid">
+          <div class="gcard stat acc-emerald" id="st1"><div class="s-ic"><i data-i="trendUp"></i></div><div class="s-val">Double-Digit</div><div class="s-lbl">Medigap Rate Increases</div><div class="s-bars"><i style="height:22%"></i><i style="height:30%"></i><i style="height:38%"></i><i style="height:55%"></i><i style="height:74%"></i><i style="height:100%"></i></div></div>
+          <div class="gcard stat acc-red" id="st2"><div class="s-ic"><i data-i="alert"></i></div><div class="s-val tnum" id="st2-val">3,000,000+</div><div class="s-lbl">Advantage Plans Terminated</div><div class="s-sub">Enrollees facing plan terminations</div></div>
+          <div class="gcard stat acc-blue dim" id="st3"><div class="s-ic"><i data-i="calendar"></i></div><div class="s-val">Dec 31, 2026</div><div class="s-lbl">Part D Federal Premium Subsidy Sunset</div><div class="s-sub">Standalone drug plans cost more next year</div></div>
+        </div>
+      </section>
+
+      <!-- Shots 13–15 · Open enrollment timeline -->
+      <section class="dscene" id="d-timeline">
+        <div class="dkicker">Medigap Open Enrollment</div>
+        <div class="dtitle">One window. <span class="q">Six months.</span> Then it closes.</div>
+        <div class="tl-wrap">
+          <div class="tl-zone g" id="tz-g"></div>
+          <div class="tl-zone r" id="tz-r"></div>
+          <div class="tl-label g abs" id="tlab-g" style="left:60px;top:26px;width:620px">
+            <div class="k">Months 1–6</div>
+            <div class="t">6-Month Medigap Open Enrollment</div>
+            <div class="gi-chip"><i data-i="checkCircle"></i>100% Guaranteed Issue · No Health Questions</div>
+          </div>
+          <div class="tl-label r abs" id="tlab-r" style="left:880px;top:26px;width:700px">
+            <div class="k">Month 7+ (Most States)</div>
+            <div class="t">Medical Underwriting Required to Switch</div>
+          </div>
+          <div class="tl-axis g" id="ax-g"></div>
+          <div class="tl-axis r" id="ax-r"></div>
+          <div class="tl-ticks" id="ticks"></div>
+          <div class="tl-node g" id="nd-g"></div>
+          <div class="tl-node r" id="nd-r"></div>
+          <div class="tl-start" id="tl-start"><span class="chip">Turn 65 + Enroll in Part B</span></div>
+          <div class="ob-line" id="obl1" style="left:870px"></div>
+          <div class="ob-line" id="obl2" style="left:1164px"></div>
+          <div class="ob-line" id="obl3" style="left:1458px"></div>
+          <div class="badge-row">
+            <div class="ob" id="ob1"><i data-i="clipboard"></i><b>Review Health History</b></div>
+            <div class="ob" id="ob2"><i data-i="dollar"></i><b>Charge Higher Tier Rate</b></div>
+            <div class="ob" id="ob3"><i data-i="ban"></i><b>Decline Coverage</b></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Shots 21–24 · Comparison table -->
+      <section class="dscene" id="d-table">
+        <div class="dkicker">Comparing Your Medigap Options</div>
+        <div class="dtitle">Plan G <span class="q">vs.</span> Plan N <span class="q">vs.</span> High-Deductible G</div>
+        <div class="ctable" id="ctable">
+          <div></div>
+          <div class="hd c1" id="h1"><small>Standard</small><b>Plan G</b></div>
+          <div class="hd c2" id="h2"><small>Medigap</small><b>Plan N</b></div>
+          <div class="hd c3" id="h3"><small>2027 Deductible: $3,050</small><b>High-Deductible G</b></div>
+
+          <div class="rl" id="rl1">Annual deductible</div>
+          <div class="cell" id="c11"><div class="v">$283</div><div class="n">Part B annual deductible*</div></div>
+          <div class="cell" id="c12"><div class="v">$283</div><div class="n">Part B annual deductible*</div></div>
+          <div class="cell c3" id="c13"><div class="v big">$3,050</div><div class="n">2027 annual deductible</div></div>
+
+          <div class="rl" id="rl2">Doctor office visits</div>
+          <div class="cell" id="c21"><div class="v">$0</div><div class="n">after Part B deductible</div></div>
+          <div class="cell" id="c22"><div class="ybadge">Up to $20 copay</div><div class="n">Doctor office visits</div></div>
+          <div class="cell c3" id="c23"><div class="v">$0</div><div class="n">after deductible is met</div></div>
+
+          <div class="rl" id="rl3">Emergency room</div>
+          <div class="cell" id="c31"><div class="v">$0</div><div class="n">after Part B deductible</div></div>
+          <div class="cell" id="c32"><div class="ybadge">Up to $50 copay</div><div class="n">ER visits — waived if admitted</div></div>
+          <div class="cell c3" id="c33"><div class="v">$0</div><div class="n">after deductible is met</div></div>
+
+          <div class="rl" id="rl4">Part B excess charges</div>
+          <div class="cell last" id="c41"><div class="v">Covered</div></div>
+          <div class="cell last" id="c42"><div class="nbadge">Not Covered</div><div class="n">Rarely billed nationwide — &lt;1% of providers</div></div>
+          <div class="cell c3 last" id="c43"><div class="v">Covered</div></div>
+
+          <div class="same-tag" id="same" style="left:calc(330px + 20px + (100% - 330px - 60px)/3 - 13px);top:216px"><span>=</span></div>
+        </div>
+        <div class="dfoot" id="tbl-foot" style="margin-top:22px">*$283 is the 2026 Part B deductible; CMS sets the 2027 amount each fall.</div>
+      </section>
+
+      <!-- Shots 32–35 · Safe switch protocol -->
+      <section class="dscene" id="d-protocol" style="align-items:center">
+        <div style="width:1460px">
+          <div class="dkicker">Checklist</div>
+          <div class="dtitle">The Safe Medigap <span class="q">Switch Protocol</span></div>
+        </div>
+        <div class="proto">
+          <div class="gcard step acc-emerald" id="p1"><div class="sn"><small>STEP</small><b>1</b></div><div class="st"><span class="gold">GOLDEN RULE</span><br>Apply for the new Medigap policy &amp; receive <em>written approval FIRST.</em></div><div class="ck"><i data-i="check" data-sw="3"></i></div></div>
+          <div class="gcard step acc-emerald" id="p2"><div class="sn"><small>STEP</small><b>2</b></div><div class="st">Manually call your old carrier to cancel once the new policy is active <em>(Does NOT auto-cancel!)</em></div><div class="ck"><i data-i="phone"></i></div></div>
+          <div class="warnbar" id="pw"><i data-i="ban"></i><div><b>Avoid Double-Billing:</b> <span>Align end date with new start date so there is zero gap</span></div></div>
+          <div class="gcard step acc-blue" id="p3"><div class="sn"><small>STEP</small><b>3</b></div><div class="st">Shop 365 Days a Year <em>(Applying after Dec 7 avoids AEP carrier backlogs)</em></div><div class="ck"><i data-i="calendar"></i></div></div>
+        </div>
+      </section>
+
+      <!-- Shots 39–42 · Scenario matrix -->
+      <section class="dscene" id="d-matrix">
+        <div class="dkicker">Medicare Advantage</div>
+        <div class="dtitle">Your 3 Advantage <span class="q">Scenarios for 2027</span></div>
+        <div class="matrix">
+          <div class="gcard scn acc-red" id="sc1"><div class="bar"></div><div class="in">
+            <div class="ic-c"><i data-i="xCircle"></i></div>
+            <div class="lbl">SCENARIO 1</div>
+            <div class="ttl">Plan Terminated (Non-Renewed)</div>
+            <div class="tx">No action = Dropped to Original Medicare with <b>NO drug plan!</b></div>
+            <div class="gbadge" id="sc1b"><i data-i="checkCircle"></i><b>Unlocks Special <em>Guaranteed Issue Right</em> for Medigap (No Health Questions!)</b></div>
+          </div></div>
+          <div class="gcard scn acc-amber" id="sc2"><div class="bar"></div><div class="in">
+            <div class="ic-c"><i data-i="repeat"></i></div>
+            <div class="lbl">SCENARIO 2</div>
+            <div class="ttl">Plan Crosswalked</div>
+            <div class="tx">Auto-moved to a similar plan. <b>Check the new doctor network &amp; drug formulary.</b></div>
+            <div class="note-sm"><i data-i="alert"></i><span>Standard underwriting applies if switching to Medigap</span></div>
+          </div></div>
+          <div class="gcard scn acc-blue" id="sc3"><div class="bar"></div><div class="in">
+            <div class="ic-c"><i data-i="file"></i></div>
+            <div class="lbl">SCENARIO 3</div>
+            <div class="ttl">Plan Renews</div>
+            <div class="tx">Verify <b>specialist copays, MOOP, doctor networks &amp; drug tiers</b> in your ANOC.</div>
+          </div></div>
+        </div>
+      </section>
+
+      <!-- Shot 46 · Order of operations -->
+      <section class="dscene" id="d-flow">
+        <div class="dkicker">Switching from Advantage to Medigap</div>
+        <div class="dtitle">Exact Order <span class="q">of Operations</span></div>
+        <div class="flow">
+          <div class="gcard fbox acc-emerald" id="fl1"><div class="fi"><i data-i="fileCheck"></i></div><div class="fn">STEP 1</div><b>Apply &amp; Get Medigap Approval</b><span>Approval in hand before you change anything</span></div>
+          <div class="farrow" id="fa1"><i data-i="arrowRight" data-sw="2.6"></i></div>
+          <div class="gcard fbox acc-blue" id="fl2"><div class="fi"><i data-i="pillRx"></i></div><div class="fn">STEP 2</div><b>Enroll in Standalone Part D Plan</b><span>Your new drug coverage</span></div>
+          <div class="farrow" id="fa2"><i data-i="arrowRight" data-sw="2.6"></i></div>
+          <div class="gcard fbox acc-amber" id="fl3"><div class="fi"><i data-i="calendar"></i></div><div class="fn">STEP 3</div><b>Advantage Plan Auto-Cancels Jan 1</b><span>Enrolling in Part D ends your Advantage plan</span></div>
+        </div>
+      </section>
+
+      <!-- Shots 50–53 · Rate increase hack -->
+      <section class="dscene" id="d-hack">
+        <div class="dkicker">Bonus Strategy</div>
+        <div class="dtitle">The Medigap <span class="q">“Rate Increase Hack”</span></div>
+        <div class="hack-eq">
+          <div class="gcard hbox acc-blue" id="hb1"><div class="hi"><i data-i="shield"></i></div><div><small>BOX 1</small><b>High-Deductible Plan G</b><span>Low Monthly Premium | $3,050 Cap</span></div></div>
+          <div class="hplus" id="hplus">+</div>
+          <div class="gcard hbox acc-emerald" id="hb2"><div class="hi"><i data-i="cash"></i></div><div><small>BOX 2</small><b>Hospital Indemnity + Cancer Cash Plan</b><span>Pays Direct Cash to You</span></div></div>
+        </div>
+        <div class="results">
+          <div class="res" id="hr1"><i data-i="checkCircle"></i><b>Direct Cash Wipes Out Deductible Exposure</b><span class="sepv"></span><i data-i="checkCircle"></i><b>Lower Combined Monthly Cost</b></div>
+          <div class="res" id="hr2"><i data-i="checkCircle"></i><b>Slower Historical Rate Increases = Massive Long-Term Savings</b></div>
+        </div>
+      </section>
+
+      <div class="wipe-edge" id="dsEdge"></div>
+    </div>
+
+    <!-- =================== OUTRO CARD =================== -->
+    <div id="outro">
+      <div class="outro-in">
+        <div class="logo" id="o-logo"><div class="monogram"><b>A<i>&amp;</i>A</b></div></div>
+        <div class="o-agency" id="o-agency">ALLEN <span class="amp">&amp;</span> ASSOCIATES<br>INSURANCE AGENCY</div>
+        <div class="o-sub" id="o-sub">MAKING MEDICARE EASY</div>
+        <div class="o-rule" id="o-rule"></div>
+        <div class="o-guide" id="o-guide"><span class="free">FREE</span><b>2027 Interactive AEP Guide</b><span class="cm"><i data-i="chat"></i>Comment “GUIDE” Below</span></div>
+        <div class="o-contact" id="o-contact">
+          <div class="c"><i data-i="phone"></i>800-324-9986</div>
+          <div class="c"><i data-i="globe"></i>allenandassociates.agency</div>
+        </div>
+      </div>
+      <div class="o-legal" id="o-legal">Not affiliated with or endorsed by the U.S. government or the federal Medicare program.</div>
+      <div class="wipe-edge" id="oEdge"></div>
+    </div>
+
+    <!-- =================== PERSISTENT UI =================== -->
+    <div id="lowerThird">
+      <div class="lt-kick" id="lt-kick">Chapter 1 · Medigap</div>
+      <div class="lt-icon"><i data-i="alert"></i></div>
+      <div class="lt-text">One Wrong Move Can Be Permanent</div>
+    </div>
+
+    <div id="pill"><div class="num" id="pill-num"></div><div class="lbl" id="pill-lbl"></div></div>
+
+    <div id="agencyBar"><div class="stripe"></div><div class="body"><span>ALLEN &amp; ASSOCIATES</span><span class="bar"></span><span class="tag">MAKING MEDICARE EASY</span></div></div>
+
+  </div>
+</div>
+
+<script src="vendor/gsap.min.js"></script>
+<script src="icons.js"></script>
+<script src="../timing/timeline.js"></script>
+<script src="timeline.js"></script>
+</body>
+</html>

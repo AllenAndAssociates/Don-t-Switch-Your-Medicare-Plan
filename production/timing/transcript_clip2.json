@@ -1,0 +1,1846 @@
+{
+"source": "ElevenLabs Scribe v1 word timestamps",
+"text": "Next, let us cover Medicare Advantage. Over three million beneficiaries are on Advantage plans that are terminating for twenty twenty-seven. Major carriers like Humana, UnitedHealthcare, and Aetna are exiting unprofitable counties and shrinking provider networks across the country. Check your mail for your annual notice of change or log in to medicare.gov to verify your plan status. Scenario one, your Advantage plan is completely non-renewed. If you do nothing, you are dropped back to original Medicare alone. However, a plan termination gives you a special guaranteed issue right to buy certain Medigap plans without any health questions. Scenario two, your carrier crosswalks you into a different Advantage plan automatically. Check the new doctor network and drug formulary. Scenario three, your Advantage plan renews, but co-pays, maximum out-of-pocket limits, or extra dental benefits may still change quietly. Do not rely solely on medicare.gov for Advantage shopping, as fine print benefit details are often incomplete online. If you want to leave Medicare Advantage for Medigap, you must pass medical underwriting unless you have a special right. Special rights include a plan termination, living in a continuous enrollment state, or using your twelve-month first-time trial right. Always get your Medigap approval first, then enroll in a standalone Part D plan, which automatically cancels your Advantage plan. And remember, the Medicare Advantage open enrollment period from January first to March thirty-first allows one additional plan switch. For standalone Part D drug plans, premiums are rising across the board, though budget options like WellCare Value Script remain. Never pick a drug plan just for a low premium. Always calculate your total annual cost based on your exact prescriptions. Now for the rate increase hack, pairing a low premium, high-deductible Plan G with targeted hospital indemnity and cancer policies. If you are hospitalized or diagnosed with cancer, these ancillary plans pay direct cash benefits straight to you. You use that cash to wipe out your three thousand and fifty dollar deductible while enjoying much lower monthly premiums overall. Even better, high-deductible Plan G rates historically increase much slower than standard Plan G, saving you thousands long term. Do not guess your way through enrollment. Comment \"guide\" below for our interactive checklist or visit allenandassociates.agency.",
+"words": [
+{
+"w": "Next,",
+"s": 0.16,
+"e": 0.46
+},
+{
+"w": "let",
+"s": 0.62,
+"e": 0.74
+},
+{
+"w": "us",
+"s": 0.8,
+"e": 0.94
+},
+{
+"w": "cover",
+"s": 0.98,
+"e": 1.18
+},
+{
+"w": "Medicare",
+"s": 1.28,
+"e": 1.66
+},
+{
+"w": "Advantage.",
+"s": 1.68,
+"e": 2.18
+},
+{
+"w": "Over",
+"s": 2.5,
+"e": 2.68
+},
+{
+"w": "three",
+"s": 2.82,
+"e": 3.02
+},
+{
+"w": "million",
+"s": 3.14,
+"e": 3.36
+},
+{
+"w": "beneficiaries",
+"s": 3.44,
+"e": 4.12
+},
+{
+"w": "are",
+"s": 4.16,
+"e": 4.24
+},
+{
+"w": "on",
+"s": 4.32,
+"e": 4.44
+},
+{
+"w": "Advantage",
+"s": 4.48,
+"e": 4.94
+},
+{
+"w": "plans",
+"s": 5.04,
+"e": 5.44
+},
+{
+"w": "that",
+"s": 5.6,
+"e": 5.7
+},
+{
+"w": "are",
+"s": 5.74,
+"e": 5.86
+},
+{
+"w": "terminating",
+"s": 5.92,
+"e": 6.42
+},
+{
+"w": "for",
+"s": 6.46,
+"e": 6.58
+},
+{
+"w": "twenty",
+"s": 6.64,
+"e": 6.86
+},
+{
+"w": "twenty-seven.",
+"s": 6.96,
+"e": 7.6
+},
+{
+"w": "Major",
+"s": 7.82,
+"e": 8.08
+},
+{
+"w": "carriers",
+"s": 8.18,
+"e": 8.62
+},
+{
+"w": "like",
+"s": 8.68,
+"e": 8.92
+},
+{
+"w": "Humana,",
+"s": 8.96,
+"e": 9.46
+},
+{
+"w": "UnitedHealthcare,",
+"s": 9.86,
+"e": 10.78
+},
+{
+"w": "and",
+"s": 11.02,
+"e": 11.12
+},
+{
+"w": "Aetna",
+"s": 11.26,
+"e": 11.62
+},
+{
+"w": "are",
+"s": 11.8,
+"e": 11.94
+},
+{
+"w": "exiting",
+"s": 12.02,
+"e": 12.42
+},
+{
+"w": "unprofitable",
+"s": 12.62,
+"e": 13.24
+},
+{
+"w": "counties",
+"s": 13.36,
+"e": 13.82
+},
+{
+"w": "and",
+"s": 13.98,
+"e": 14.08
+},
+{
+"w": "shrinking",
+"s": 14.22,
+"e": 14.62
+},
+{
+"w": "provider",
+"s": 14.72,
+"e": 15.1
+},
+{
+"w": "networks",
+"s": 15.18,
+"e": 15.64
+},
+{
+"w": "across",
+"s": 15.72,
+"e": 16.079
+},
+{
+"w": "the",
+"s": 16.12,
+"e": 16.2
+},
+{
+"w": "country.",
+"s": 16.26,
+"e": 16.66
+},
+{
+"w": "Check",
+"s": 16.86,
+"e": 17.08
+},
+{
+"w": "your",
+"s": 17.12,
+"e": 17.22
+},
+{
+"w": "mail",
+"s": 17.3,
+"e": 17.52
+},
+{
+"w": "for",
+"s": 17.64,
+"e": 17.74
+},
+{
+"w": "your",
+"s": 17.78,
+"e": 17.92
+},
+{
+"w": "annual",
+"s": 18.02,
+"e": 18.24
+},
+{
+"w": "notice",
+"s": 18.34,
+"e": 18.6
+},
+{
+"w": "of",
+"s": 18.66,
+"e": 18.72
+},
+{
+"w": "change",
+"s": 18.84,
+"e": 19.28
+},
+{
+"w": "or",
+"s": 19.44,
+"e": 19.52
+},
+{
+"w": "log",
+"s": 19.64,
+"e": 19.88
+},
+{
+"w": "in",
+"s": 19.92,
+"e": 20.02
+},
+{
+"w": "to",
+"s": 20.06,
+"e": 20.16
+},
+{
+"w": "medicare.gov",
+"s": 20.2,
+"e": 21.34
+},
+{
+"w": "to",
+"s": 21.48,
+"e": 21.64
+},
+{
+"w": "verify",
+"s": 21.68,
+"e": 22.22
+},
+{
+"w": "your",
+"s": 22.28,
+"e": 22.36
+},
+{
+"w": "plan",
+"s": 22.46,
+"e": 22.72
+},
+{
+"w": "status.",
+"s": 22.86,
+"e": 23.3
+},
+{
+"w": "Scenario",
+"s": 23.58,
+"e": 24.14
+},
+{
+"w": "one,",
+"s": 24.28,
+"e": 24.58
+},
+{
+"w": "your",
+"s": 24.8,
+"e": 24.86
+},
+{
+"w": "Advantage",
+"s": 24.9,
+"e": 25.34
+},
+{
+"w": "plan",
+"s": 25.4,
+"e": 25.62
+},
+{
+"w": "is",
+"s": 25.66,
+"e": 25.76
+},
+{
+"w": "completely",
+"s": 25.8,
+"e": 26.28
+},
+{
+"w": "non-renewed.",
+"s": 26.36,
+"e": 27.08
+},
+{
+"w": "If",
+"s": 27.28,
+"e": 27.36
+},
+{
+"w": "you",
+"s": 27.42,
+"e": 27.52
+},
+{
+"w": "do",
+"s": 27.56,
+"e": 27.72
+},
+{
+"w": "nothing,",
+"s": 27.78,
+"e": 28.18
+},
+{
+"w": "you",
+"s": 28.4,
+"e": 28.44
+},
+{
+"w": "are",
+"s": 28.48,
+"e": 28.6
+},
+{
+"w": "dropped",
+"s": 28.62,
+"e": 28.94
+},
+{
+"w": "back",
+"s": 28.96,
+"e": 29.2
+},
+{
+"w": "to",
+"s": 29.24,
+"e": 29.32
+},
+{
+"w": "original",
+"s": 29.36,
+"e": 29.74
+},
+{
+"w": "Medicare",
+"s": 29.82,
+"e": 30.22
+},
+{
+"w": "alone.",
+"s": 30.3,
+"e": 30.7
+},
+{
+"w": "However,",
+"s": 30.84,
+"e": 31.34
+},
+{
+"w": "a",
+"s": 31.62,
+"e": 31.72
+},
+{
+"w": "plan",
+"s": 31.76,
+"e": 31.98
+},
+{
+"w": "termination",
+"s": 32.06,
+"e": 32.56
+},
+{
+"w": "gives",
+"s": 32.659,
+"e": 32.86
+},
+{
+"w": "you",
+"s": 32.9,
+"e": 32.96
+},
+{
+"w": "a",
+"s": 33.02,
+"e": 33.1
+},
+{
+"w": "special",
+"s": 33.22,
+"e": 33.62
+},
+{
+"w": "guaranteed",
+"s": 33.84,
+"e": 34.34
+},
+{
+"w": "issue",
+"s": 34.48,
+"e": 34.72
+},
+{
+"w": "right",
+"s": 34.82,
+"e": 35.18
+},
+{
+"w": "to",
+"s": 35.22,
+"e": 35.32
+},
+{
+"w": "buy",
+"s": 35.36,
+"e": 35.6
+},
+{
+"w": "certain",
+"s": 35.66,
+"e": 35.94
+},
+{
+"w": "Medigap",
+"s": 36.02,
+"e": 36.4
+},
+{
+"w": "plans",
+"s": 36.52,
+"e": 36.92
+},
+{
+"w": "without",
+"s": 37.1,
+"e": 37.52
+},
+{
+"w": "any",
+"s": 37.62,
+"e": 37.8
+},
+{
+"w": "health",
+"s": 37.92,
+"e": 38.12
+},
+{
+"w": "questions.",
+"s": 38.24,
+"e": 38.8
+},
+{
+"w": "Scenario",
+"s": 39.08,
+"e": 39.56
+},
+{
+"w": "two,",
+"s": 39.72,
+"e": 40.04
+},
+{
+"w": "your",
+"s": 40.28,
+"e": 40.36
+},
+{
+"w": "carrier",
+"s": 40.5,
+"e": 40.82
+},
+{
+"w": "crosswalks",
+"s": 40.96,
+"e": 41.58
+},
+{
+"w": "you",
+"s": 41.64,
+"e": 41.72
+},
+{
+"w": "into",
+"s": 41.76,
+"e": 41.96
+},
+{
+"w": "a",
+"s": 42.02,
+"e": 42.14
+},
+{
+"w": "different",
+"s": 42.18,
+"e": 42.44
+},
+{
+"w": "Advantage",
+"s": 42.48,
+"e": 42.9
+},
+{
+"w": "plan",
+"s": 43.0,
+"e": 43.28
+},
+{
+"w": "automatically.",
+"s": 43.48,
+"e": 44.18
+},
+{
+"w": "Check",
+"s": 44.4,
+"e": 44.64
+},
+{
+"w": "the",
+"s": 44.68,
+"e": 44.76
+},
+{
+"w": "new",
+"s": 44.8,
+"e": 44.96
+},
+{
+"w": "doctor",
+"s": 45.0,
+"e": 45.3
+},
+{
+"w": "network",
+"s": 45.38,
+"e": 45.86
+},
+{
+"w": "and",
+"s": 46.0,
+"e": 46.12
+},
+{
+"w": "drug",
+"s": 46.2,
+"e": 46.46
+},
+{
+"w": "formulary.",
+"s": 46.58,
+"e": 47.2
+},
+{
+"w": "Scenario",
+"s": 47.46,
+"e": 47.98
+},
+{
+"w": "three,",
+"s": 48.12,
+"e": 48.44
+},
+{
+"w": "your",
+"s": 48.66,
+"e": 48.74
+},
+{
+"w": "Advantage",
+"s": 48.76,
+"e": 49.2
+},
+{
+"w": "plan",
+"s": 49.28,
+"e": 49.5
+},
+{
+"w": "renews,",
+"s": 49.56,
+"e": 50.18
+},
+{
+"w": "but",
+"s": 50.36,
+"e": 50.54
+},
+{
+"w": "co-pays,",
+"s": 50.6,
+"e": 51.3
+},
+{
+"w": "maximum",
+"s": 51.56,
+"e": 52.0
+},
+{
+"w": "out-of-pocket",
+"s": 52.08,
+"e": 52.62
+},
+{
+"w": "limits,",
+"s": 52.68,
+"e": 53.04
+},
+{
+"w": "or",
+"s": 53.26,
+"e": 53.34
+},
+{
+"w": "extra",
+"s": 53.5,
+"e": 53.8
+},
+{
+"w": "dental",
+"s": 53.92,
+"e": 54.14
+},
+{
+"w": "benefits",
+"s": 54.22,
+"e": 54.76
+},
+{
+"w": "may",
+"s": 54.96,
+"e": 55.12
+},
+{
+"w": "still",
+"s": 55.26,
+"e": 55.5
+},
+{
+"w": "change",
+"s": 55.64,
+"e": 55.98
+},
+{
+"w": "quietly.",
+"s": 56.1,
+"e": 56.62
+},
+{
+"w": "Do",
+"s": 56.8,
+"e": 56.94
+},
+{
+"w": "not",
+"s": 57.02,
+"e": 57.24
+},
+{
+"w": "rely",
+"s": 57.28,
+"e": 57.62
+},
+{
+"w": "solely",
+"s": 57.78,
+"e": 58.08
+},
+{
+"w": "on",
+"s": 58.14,
+"e": 58.26
+},
+{
+"w": "medicare.gov",
+"s": 58.32,
+"e": 59.42
+},
+{
+"w": "for",
+"s": 59.58,
+"e": 59.68
+},
+{
+"w": "Advantage",
+"s": 59.7,
+"e": 60.2
+},
+{
+"w": "shopping,",
+"s": 60.28,
+"e": 60.74
+},
+{
+"w": "as",
+"s": 60.96,
+"e": 61.14
+},
+{
+"w": "fine",
+"s": 61.2,
+"e": 61.46
+},
+{
+"w": "print",
+"s": 61.58,
+"e": 61.88
+},
+{
+"w": "benefit",
+"s": 61.92,
+"e": 62.26
+},
+{
+"w": "details",
+"s": 62.34,
+"e": 62.84
+},
+{
+"w": "are",
+"s": 62.98,
+"e": 63.14
+},
+{
+"w": "often",
+"s": 63.24,
+"e": 63.6
+},
+{
+"w": "incomplete",
+"s": 63.78,
+"e": 64.42
+},
+{
+"w": "online.",
+"s": 64.58,
+"e": 65.14
+},
+{
+"w": "If",
+"s": 65.34,
+"e": 65.44
+},
+{
+"w": "you",
+"s": 65.48,
+"e": 65.56
+},
+{
+"w": "want",
+"s": 65.62,
+"e": 65.78
+},
+{
+"w": "to",
+"s": 65.82,
+"e": 65.9
+},
+{
+"w": "leave",
+"s": 65.94,
+"e": 66.12
+},
+{
+"w": "Medicare",
+"s": 66.2,
+"e": 66.62
+},
+{
+"w": "Advantage",
+"s": 66.62,
+"e": 67.04
+},
+{
+"w": "for",
+"s": 67.08,
+"e": 67.2
+},
+{
+"w": "Medigap,",
+"s": 67.24,
+"e": 67.74
+},
+{
+"w": "you",
+"s": 67.96,
+"e": 68.04
+},
+{
+"w": "must",
+"s": 68.2,
+"e": 68.44
+},
+{
+"w": "pass",
+"s": 68.6,
+"e": 68.9
+},
+{
+"w": "medical",
+"s": 69.02,
+"e": 69.32
+},
+{
+"w": "underwriting",
+"s": 69.44,
+"e": 69.98
+},
+{
+"w": "unless",
+"s": 70.2,
+"e": 70.58
+},
+{
+"w": "you",
+"s": 70.64,
+"e": 70.7
+},
+{
+"w": "have",
+"s": 70.74,
+"e": 70.88
+},
+{
+"w": "a",
+"s": 70.92,
+"e": 70.98
+},
+{
+"w": "special",
+"s": 71.08,
+"e": 71.42
+},
+{
+"w": "right.",
+"s": 71.52,
+"e": 71.7
+},
+{
+"w": "Special",
+"s": 71.98,
+"e": 72.3
+},
+{
+"w": "rights",
+"s": 72.38,
+"e": 72.64
+},
+{
+"w": "include",
+"s": 72.7,
+"e": 73.3
+},
+{
+"w": "a",
+"s": 73.52,
+"e": 73.64
+},
+{
+"w": "plan",
+"s": 73.68,
+"e": 73.92
+},
+{
+"w": "termination,",
+"s": 74.02,
+"e": 74.68
+},
+{
+"w": "living",
+"s": 74.98,
+"e": 75.22
+},
+{
+"w": "in",
+"s": 75.26,
+"e": 75.34
+},
+{
+"w": "a",
+"s": 75.4,
+"e": 75.46
+},
+{
+"w": "continuous",
+"s": 75.52,
+"e": 76.08
+},
+{
+"w": "enrollment",
+"s": 76.14,
+"e": 76.62
+},
+{
+"w": "state,",
+"s": 76.76,
+"e": 77.0
+},
+{
+"w": "or",
+"s": 77.26,
+"e": 77.36
+},
+{
+"w": "using",
+"s": 77.52,
+"e": 77.8
+},
+{
+"w": "your",
+"s": 77.84,
+"e": 78.0
+},
+{
+"w": "twelve-month",
+"s": 78.06,
+"e": 78.74
+},
+{
+"w": "first-time",
+"s": 78.94,
+"e": 79.58
+},
+{
+"w": "trial",
+"s": 79.7,
+"e": 79.98
+},
+{
+"w": "right.",
+"s": 80.08,
+"e": 80.26
+},
+{
+"w": "Always",
+"s": 80.5,
+"e": 80.86
+},
+{
+"w": "get",
+"s": 80.9,
+"e": 81.04
+},
+{
+"w": "your",
+"s": 81.08,
+"e": 81.2
+},
+{
+"w": "Medigap",
+"s": 81.26,
+"e": 81.68
+},
+{
+"w": "approval",
+"s": 81.74,
+"e": 82.16
+},
+{
+"w": "first,",
+"s": 82.38,
+"e": 82.82
+},
+{
+"w": "then",
+"s": 83.14,
+"e": 83.42
+},
+{
+"w": "enroll",
+"s": 83.46,
+"e": 83.82
+},
+{
+"w": "in",
+"s": 83.86,
+"e": 83.94
+},
+{
+"w": "a",
+"s": 83.98,
+"e": 84.1
+},
+{
+"w": "standalone",
+"s": 84.2,
+"e": 84.82
+},
+{
+"w": "Part",
+"s": 84.94,
+"e": 85.14
+},
+{
+"w": "D",
+"s": 85.26,
+"e": 85.38
+},
+{
+"w": "plan,",
+"s": 85.5,
+"e": 85.88
+},
+{
+"w": "which",
+"s": 86.08,
+"e": 86.34
+},
+{
+"w": "automatically",
+"s": 86.42,
+"e": 87.0
+},
+{
+"w": "cancels",
+"s": 87.18,
+"e": 87.74
+},
+{
+"w": "your",
+"s": 88.0,
+"e": 88.06
+},
+{
+"w": "Advantage",
+"s": 88.1,
+"e": 88.54
+},
+{
+"w": "plan.",
+"s": 88.64,
+"e": 88.96
+},
+{
+"w": "And",
+"s": 89.14,
+"e": 89.26
+},
+{
+"w": "remember,",
+"s": 89.3,
+"e": 89.7
+},
+{
+"w": "the",
+"s": 89.8,
+"e": 89.88
+},
+{
+"w": "Medicare",
+"s": 89.94,
+"e": 90.32
+},
+{
+"w": "Advantage",
+"s": 90.34,
+"e": 90.78
+},
+{
+"w": "open",
+"s": 90.92,
+"e": 91.1
+},
+{
+"w": "enrollment",
+"s": 91.14,
+"e": 91.56
+},
+{
+"w": "period",
+"s": 91.66,
+"e": 92.16
+},
+{
+"w": "from",
+"s": 92.22,
+"e": 92.42
+},
+{
+"w": "January",
+"s": 92.48,
+"e": 92.96
+},
+{
+"w": "first",
+"s": 93.12,
+"e": 93.46
+},
+{
+"w": "to",
+"s": 93.64,
+"e": 93.74
+},
+{
+"w": "March",
+"s": 93.78,
+"e": 94.06
+},
+{
+"w": "thirty-first",
+"s": 94.16,
+"e": 94.84
+},
+{
+"w": "allows",
+"s": 95.04,
+"e": 95.42
+},
+{
+"w": "one",
+"s": 95.58,
+"e": 95.82
+},
+{
+"w": "additional",
+"s": 95.96,
+"e": 96.46
+},
+{
+"w": "plan",
+"s": 96.62,
+"e": 96.92
+},
+{
+"w": "switch.",
+"s": 97.08,
+"e": 97.46
+},
+{
+"w": "For",
+"s": 97.62,
+"e": 97.72
+},
+{
+"w": "standalone",
+"s": 97.86,
+"e": 98.46
+},
+{
+"w": "Part",
+"s": 98.62,
+"e": 98.84
+},
+{
+"w": "D",
+"s": 98.96,
+"e": 99.1
+},
+{
+"w": "drug",
+"s": 99.2,
+"e": 99.42
+},
+{
+"w": "plans,",
+"s": 99.54,
+"e": 99.98
+},
+{
+"w": "premiums",
+"s": 100.12,
+"e": 100.58
+},
+{
+"w": "are",
+"s": 100.6,
+"e": 100.7
+},
+{
+"w": "rising",
+"s": 100.76,
+"e": 101.14
+},
+{
+"w": "across",
+"s": 101.2,
+"e": 101.62
+},
+{
+"w": "the",
+"s": 101.68,
+"e": 101.8
+},
+{
+"w": "board,",
+"s": 101.84,
+"e": 102.14
+},
+{
+"w": "though",
+"s": 102.28,
+"e": 102.5
+},
+{
+"w": "budget",
+"s": 102.52,
+"e": 102.86
+},
+{
+"w": "options",
+"s": 102.94,
+"e": 103.36
+},
+{
+"w": "like",
+"s": 103.42,
+"e": 103.66
+},
+{
+"w": "WellCare",
+"s": 103.72,
+"e": 104.2
+},
+{
+"w": "Value",
+"s": 104.3,
+"e": 104.62
+},
+{
+"w": "Script",
+"s": 104.72,
+"e": 105.06
+},
+{
+"w": "remain.",
+"s": 105.22,
+"e": 105.74
+},
+{
+"w": "Never",
+"s": 106.04,
+"e": 106.28
+},
+{
+"w": "pick",
+"s": 106.42,
+"e": 106.56
+},
+{
+"w": "a",
+"s": 106.6,
+"e": 106.68
+},
+{
+"w": "drug",
+"s": 106.7,
+"e": 106.92
+},
+{
+"w": "plan",
+"s": 107.04,
+"e": 107.38
+},
+{
+"w": "just",
+"s": 107.6,
+"e": 107.88
+},
+{
+"w": "for",
+"s": 107.94,
+"e": 108.06
+},
+{
+"w": "a",
+"s": 108.14,
+"e": 108.22
+},
+{
+"w": "low",
+"s": 108.28,
+"e": 108.44
+},
+{
+"w": "premium.",
+"s": 108.56,
+"e": 109.02
+},
+{
+"w": "Always",
+"s": 109.28,
+"e": 109.68
+},
+{
+"w": "calculate",
+"s": 109.8,
+"e": 110.34
+},
+{
+"w": "your",
+"s": 110.38,
+"e": 110.54
+},
+{
+"w": "total",
+"s": 110.6,
+"e": 110.88
+},
+{
+"w": "annual",
+"s": 111.04,
+"e": 111.3
+},
+{
+"w": "cost",
+"s": 111.44,
+"e": 111.84
+},
+{
+"w": "based",
+"s": 112.02,
+"e": 112.3
+},
+{
+"w": "on",
+"s": 112.36,
+"e": 112.48
+},
+{
+"w": "your",
+"s": 112.54,
+"e": 112.62
+},
+{
+"w": "exact",
+"s": 112.68,
+"e": 113.22
+},
+{
+"w": "prescriptions.",
+"s": 113.34,
+"e": 114.16
+},
+{
+"w": "Now",
+"s": 114.4,
+"e": 114.64
+},
+{
+"w": "for",
+"s": 114.7,
+"e": 114.82
+},
+{
+"w": "the",
+"s": 114.86,
+"e": 114.92
+},
+{
+"w": "rate",
+"s": 115.0,
+"e": 115.24
+},
+{
+"w": "increase",
+"s": 115.3,
+"e": 115.72
+},
+{
+"w": "hack,",
+"s": 115.8,
+"e": 116.08
+},
+{
+"w": "pairing",
+"s": 116.24,
+"e": 116.58
+},
+{
+"w": "a",
+"s": 116.66,
+"e": 116.78
+},
+{
+"w": "low",
+"s": 116.86,
+"e": 117.02
+},
+{
+"w": "premium,",
+"s": 117.16,
+"e": 117.64
+},
+{
+"w": "high-deductible",
+"s": 117.94,
+"e": 118.64
+},
+{
+"w": "Plan",
+"s": 118.76,
+"e": 119.04
+},
+{
+"w": "G",
+"s": 119.16,
+"e": 119.46
+},
+{
+"w": "with",
+"s": 119.7,
+"e": 119.82
+},
+{
+"w": "targeted",
+"s": 119.98,
+"e": 120.46
+},
+{
+"w": "hospital",
+"s": 120.58,
+"e": 121.0
+},
+{
+"w": "indemnity",
+"s": 121.02,
+"e": 121.58
+},
+{
+"w": "and",
+"s": 121.8,
+"e": 121.92
+},
+{
+"w": "cancer",
+"s": 122.06,
+"e": 122.42
+},
+{
+"w": "policies.",
+"s": 122.52,
+"e": 123.08
+},
+{
+"w": "If",
+"s": 123.3,
+"e": 123.4
+},
+{
+"w": "you",
+"s": 123.46,
+"e": 123.54
+},
+{
+"w": "are",
+"s": 123.58,
+"e": 123.7
+},
+{
+"w": "hospitalized",
+"s": 123.74,
+"e": 124.64
+},
+{
+"w": "or",
+"s": 124.7,
+"e": 124.78
+},
+{
+"w": "diagnosed",
+"s": 124.9,
+"e": 125.42
+},
+{
+"w": "with",
+"s": 125.46,
+"e": 125.56
+},
+{
+"w": "cancer,",
+"s": 125.68,
+"e": 126.12
+},
+{
+"w": "these",
+"s": 126.38,
+"e": 126.7
+},
+{
+"w": "ancillary",
+"s": 126.8,
+"e": 127.26
+},
+{
+"w": "plans",
+"s": 127.36,
+"e": 127.72
+},
+{
+"w": "pay",
+"s": 127.82,
+"e": 127.96
+},
+{
+"w": "direct",
+"s": 128.02,
+"e": 128.479
+},
+{
+"w": "cash",
+"s": 128.56,
+"e": 128.84
+},
+{
+"w": "benefits",
+"s": 128.96,
+"e": 129.46
+},
+{
+"w": "straight",
+"s": 129.8,
+"e": 130.12
+},
+{
+"w": "to",
+"s": 130.18,
+"e": 130.28
+},
+{
+"w": "you.",
+"s": 130.4,
+"e": 130.58
+},
+{
+"w": "You",
+"s": 130.78,
+"e": 130.88
+},
+{
+"w": "use",
+"s": 131.06,
+"e": 131.24
+},
+{
+"w": "that",
+"s": 131.3,
+"e": 131.5
+},
+{
+"w": "cash",
+"s": 131.58,
+"e": 131.98
+},
+{
+"w": "to",
+"s": 132.16,
+"e": 132.26
+},
+{
+"w": "wipe",
+"s": 132.36,
+"e": 132.62
+},
+{
+"w": "out",
+"s": 132.68,
+"e": 132.84
+},
+{
+"w": "your",
+"s": 132.88,
+"e": 133.02
+},
+{
+"w": "three",
+"s": 133.08,
+"e": 133.26
+},
+{
+"w": "thousand",
+"s": 133.34,
+"e": 133.66
+},
+{
+"w": "and",
+"s": 133.66,
+"e": 133.72
+},
+{
+"w": "fifty",
+"s": 133.8,
+"e": 134.02
+},
+{
+"w": "dollar",
+"s": 134.1,
+"e": 134.32
+},
+{
+"w": "deductible",
+"s": 134.4,
+"e": 135.0
+},
+{
+"w": "while",
+"s": 135.2,
+"e": 135.38
+},
+{
+"w": "enjoying",
+"s": 135.42,
+"e": 135.92
+},
+{
+"w": "much",
+"s": 136.06,
+"e": 136.36
+},
+{
+"w": "lower",
+"s": 136.42,
+"e": 136.62
+},
+{
+"w": "monthly",
+"s": 136.72,
+"e": 137.02
+},
+{
+"w": "premiums",
+"s": 137.14,
+"e": 137.68
+},
+{
+"w": "overall.",
+"s": 137.9,
+"e": 138.44
+},
+{
+"w": "Even",
+"s": 138.66,
+"e": 138.88
+},
+{
+"w": "better,",
+"s": 138.98,
+"e": 139.32
+},
+{
+"w": "high-deductible",
+"s": 139.62,
+"e": 140.22
+},
+{
+"w": "Plan",
+"s": 140.3,
+"e": 140.58
+},
+{
+"w": "G",
+"s": 140.68,
+"e": 140.84
+},
+{
+"w": "rates",
+"s": 140.96,
+"e": 141.3
+},
+{
+"w": "historically",
+"s": 141.48,
+"e": 142.24
+},
+{
+"w": "increase",
+"s": 142.32,
+"e": 142.76
+},
+{
+"w": "much",
+"s": 142.92,
+"e": 143.12
+},
+{
+"w": "slower",
+"s": 143.22,
+"e": 143.6
+},
+{
+"w": "than",
+"s": 143.8,
+"e": 143.98
+},
+{
+"w": "standard",
+"s": 144.08,
+"e": 144.42
+},
+{
+"w": "Plan",
+"s": 144.54,
+"e": 144.78
+},
+{
+"w": "G,",
+"s": 144.88,
+"e": 145.08
+},
+{
+"w": "saving",
+"s": 145.42,
+"e": 145.78
+},
+{
+"w": "you",
+"s": 145.82,
+"e": 145.9
+},
+{
+"w": "thousands",
+"s": 146.0,
+"e": 146.64
+},
+{
+"w": "long",
+"s": 146.74,
+"e": 146.96
+},
+{
+"w": "term.",
+"s": 147.08,
+"e": 147.4
+},
+{
+"w": "Do",
+"s": 147.58,
+"e": 147.68
+},
+{
+"w": "not",
+"s": 147.8,
+"e": 148.12
+},
+{
+"w": "guess",
+"s": 148.16,
+"e": 148.38
+},
+{
+"w": "your",
+"s": 148.44,
+"e": 148.58
+},
+{
+"w": "way",
+"s": 148.62,
+"e": 148.82
+},
+{
+"w": "through",
+"s": 148.84,
+"e": 149.02
+},
+{
+"w": "enrollment.",
+"s": 149.08,
+"e": 149.58
+},
+{
+"w": "Comment",
+"s": 149.76,
+"e": 150.08
+},
+{
+"w": "\"guide\"",
+"s": 150.16,
+"e": 150.48
+},
+{
+"w": "below",
+"s": 150.56,
+"e": 150.98
+},
+{
+"w": "for",
+"s": 151.14,
+"e": 151.26
+},
+{
+"w": "our",
+"s": 151.32,
+"e": 151.42
+},
+{
+"w": "interactive",
+"s": 151.56,
+"e": 152.08
+},
+{
+"w": "checklist",
+"s": 152.2,
+"e": 152.76
+},
+{
+"w": "or",
+"s": 152.94,
+"e": 153.02
+},
+{
+"w": "visit",
+"s": 153.14,
+"e": 153.48
+},
+{
+"w": "allenandassociates.agency.",
+"s": 153.72,
+"e": 155.9
+}
+]
+}
