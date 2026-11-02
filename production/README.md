@@ -45,7 +45,7 @@ python3 render/composite.py stills --out build/review
 
 - **On-screen text:** edit `composition/index.html`. Animation timing is in `composition/timeline.js`.
 - **Retiming:** change a cue phrase in `script/shots.json`, then re-run `timing/align.py`.
-- **Logo:** put the agency logo at `production/assets/logo.png`. It replaces the "A&A" monogram on the brand card and the outro.
+- **Logo:** the official logo is `production/assets/logo.png` (source of truth: `.claude/skills/allen-associates-brand`). It appears on the brand card (shot 4) and on a white card in the outro.
 - **Preview in a browser:** serve `production/` and open `composition/index.html?preview&t=<seconds>`.
 
 ## Deliberate deviations from the blueprint

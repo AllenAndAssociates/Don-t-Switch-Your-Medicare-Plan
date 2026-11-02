@@ -673,3 +673,8 @@ body.layer-bg #fg { display: none; }
 .o-contact .c { display: flex; align-items: center; gap: 16px; background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.18); border-radius: 12px; padding: 18px 28px; font-family: var(--display); font-weight: 850; font-size: 40px; letter-spacing: 0.01em; }
 .o-contact .c .ic { color: #7BE3A5; font-size: 40px; }
 .o-legal { position: absolute; left: 0; right: 0; bottom: 38px; text-align: center; font-size: 18px; color: rgba(214,226,243,0.62); font-weight: 500; letter-spacing: 0.02em; }
+
+/* Official logo (see .claude/skills/allen-associates-brand) */
+.logo-official { display: block; width: 470px; height: auto; }
+.o-logo-card { background: #fff; border-radius: 22px; padding: 34px 48px; box-shadow: 0 30px 70px -30px rgba(0,0,0,0.6), 0 0 0 1px rgba(255,255,255,0.4); }
+.o-logo-card img { display: block; width: 640px; height: auto; }

@@ -22,25 +22,11 @@
   window.__ready = (async () => {
     await document.fonts.ready;
     await Promise.all(['400 20px Inter', '800 20px Archivo'].map((f) => document.fonts.load(f)));
-    await maybeUseLogo();
     applyIcons();
     buildDynamic();
     build();
     return true;
   })();
-
-  // Optional real logo: drop production/assets/logo.png and it replaces the monogram.
-  function maybeUseLogo() {
-    return new Promise((resolve) => {
-      const img = new Image();
-      img.onload = () => {
-        qa('.logo').forEach((el) => { el.innerHTML = '<img src="../assets/logo.png" alt="">'; });
-        resolve();
-      };
-      img.onerror = () => resolve();
-      img.src = '../assets/logo.png';
-    });
-  }
 
   /* ------------------------------------------------------------------ */
   function buildDynamic() {
@@ -325,8 +311,7 @@
     {
       const b = B['r-brand'];
       up('#r-brand .brand-card', b, { duration: 0.7 });
-      pop('#r-brand .logo', b + 0.25);
-      left('#r-brand .brand-agency', b + 0.35);
+      IN('#r-brand .logo-official', b + 0.25, { scale: 0.85, transformOrigin: '0% 50%' }, { ease: 'back.out(1.8)', duration: 0.6 });
       up('#r-brand .brand-name', b + 0.5);
       left('#r-brand .brand-chip', b + 0.9);
       IN('#r-brand .brand-rule', b + 1.2, { scaleX: 0, transformOrigin: '0% 50%', opacity: 1 }, { duration: 0.7 });
@@ -739,9 +724,7 @@
     // --- outro card
     {
       const b = oT + 0.5;
-      pop('#o-logo', b);
-      up('#o-agency', b + 0.25, { duration: 0.7 });
-      up('#o-sub', b + 0.5);
+      IN('#o-logo', b, { scale: 0.8, y: 30 }, { ease: 'back.out(1.6)', duration: 0.8 });
       IN('#o-rule', b + 0.7, { scaleX: 0, opacity: 1 }, { duration: 0.8, ease: 'power3.inOut' });
       up('#o-guide', b + 0.9);
       up('#o-contact', b + 1.15);
