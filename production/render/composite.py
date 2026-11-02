@@ -47,6 +47,10 @@ def bt709_decode_cmd(tl, start_frame=0):
     return cmd
 
 
+# alpha lookup on spill = clip(G - max(R, B), 0, 255)
+_ALPHA_LUT = np.clip((KEY_HI - np.arange(256, dtype=np.float32)) / float(KEY_HI - KEY_LO), 0.0, 1.0).astype(np.float32)
+
+
 def key_and_place(src_bgr, st):
     """Warp the source frame into stage space and return (bgr, alpha[0..1], x0, x1) for the covered columns."""
     s, cx, top = st["scale"], st["cx"], st["top"]
@@ -58,38 +62,44 @@ def key_and_place(src_bgr, st):
     M = np.float32([[s, 0, left - x0], [0, s, top]])
     warped = cv2.warpAffine(src_bgr, M, (x1 - x0, H), flags=cv2.INTER_LINEAR,
                             borderMode=cv2.BORDER_CONSTANT, borderValue=(0, 255, 0))
-    b, g, r = [warped[..., i].astype(np.int16) for i in range(3)]
-    mx = np.maximum(r, b)
-    spill = g - mx
-    alpha = np.clip((KEY_HI - spill) / float(KEY_HI - KEY_LO), 0.0, 1.0).astype(np.float32)
-    # despill: clamp green to the stronger of red/blue
-    warped[..., 1] = np.minimum(g, mx).astype(np.uint8)
+    b, g, r = cv2.split(warped)
+    mx = cv2.max(r, b)
+    spill = cv2.subtract(g, mx)                    # saturating: negative spill -> 0
+    alpha = _ALPHA_LUT[spill]
+    warped = cv2.merge([b, cv2.min(g, mx), r])     # despill: clamp green to max(R, B)
     # soften the hard vertical border of the source frame where it falls inside the picture
-    cols = np.arange(x0, x1, dtype=np.float32) + 0.5
-    ramp = np.ones_like(cols)
-    if left > 2:
-        ramp = np.minimum(ramp, np.clip((cols - left) / FEATHER, 0, 1))
     right = left + SRC_W * s
-    if right < W - 2:
-        ramp = np.minimum(ramp, np.clip((right - cols) / FEATHER, 0, 1))
-    alpha *= ramp[None, :]
-    return warped, alpha, x0, x1
+    if left > 2 or right < W - 2:
+        cols = np.arange(x0, x1, dtype=np.float32) + 0.5
+        ramp = np.ones_like(cols)
+        if left > 2:
+            ramp = np.minimum(ramp, np.clip((cols - left) / FEATHER, 0, 1))
+        if right < W - 2:
+            ramp = np.minimum(ramp, np.clip((right - cols) / FEATHER, 0, 1))
+        alpha = alpha * ramp[None, :]
+    return warped, np.ascontiguousarray(alpha, dtype=np.float32), x0, x1
+
+
+def _over(dst, src, a):
+    """dst <- src*a + dst*(1-a), uint8 images, a float32 [0,1] single-channel."""
+    return cv2.blendLinear(src, dst, a, 1.0 - a)
 
 
 def compose(bg_plate, src_bgr, fg_rgba, st):
+    fg_bgr = fg_rgba[..., :3]
+    fa_u8 = fg_rgba[..., 3]
+    if st.get("hidden") and cv2.countNonZero(255 - fa_u8) == 0:
+        return np.ascontiguousarray(fg_bgr)
     cx = st["cx"]
     off = int(round(min(max(1200 - cx, 0), bg_plate.shape[1] - W)))
-    out = bg_plate[:, off:off + W].astype(np.float32)
+    out = np.ascontiguousarray(bg_plate[:, off:off + W])
     if src_bgr is not None and not st.get("hidden"):
         placed = key_and_place(src_bgr, st)
         if placed is not None:
             av, a, x0, x1 = placed
-            a3 = a[..., None]
-            out[:, x0:x1] = out[:, x0:x1] * (1.0 - a3) + av.astype(np.float32) * a3
-    if fg_rgba is not None:
-        fa = fg_rgba[..., 3:4].astype(np.float32) / 255.0
-        out = out * (1.0 - fa) + fg_rgba[..., :3].astype(np.float32) * fa
-    return np.clip(out + 0.5, 0, 255).astype(np.uint8)
+            out[:, x0:x1] = _over(np.ascontiguousarray(out[:, x0:x1]), av, a)
+    fa = fa_u8.astype(np.float32) * (1.0 / 255.0)
+    return _over(out, np.ascontiguousarray(fg_bgr), fa)
 
 
 def read_fg(path):
